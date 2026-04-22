@@ -51,3 +51,7 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+.navbar h2 a {
+  text-decoration: none;
+  color: inherit;
+}
