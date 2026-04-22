@@ -1,9 +1,9 @@
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer">
-      © 2026 Proyecto
+      <p>© 2026 Zenith Bonsai Studio.</p>
     </footer>
   );
-};
+}
 
 export default Footer;

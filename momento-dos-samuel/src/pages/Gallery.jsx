@@ -1,15 +1,16 @@
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
-function Home() {
+function Gallery() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <h1 style={{ textAlign: "center", marginTop: "100px" }}>
+        Galería
+      </h1>
       <Footer />
     </>
   );
 }
 
-export default Home;
+export default Gallery;
