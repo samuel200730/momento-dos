@@ -1,30 +1,17 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar">
+      <NavLink to="/" className="logo">
+        ZENITH BONSAI
+      </NavLink>
 
-      {/* 👇 ESTE ES EL CAMBIO */}
-      <h2>
-        <Link to="/">ZENITH BONSAI</Link>
-      </h2>
-
-      <ul>
-        <li>
-          <Link to="/filosofia">Filosofía</Link>
-        </li>
-
-        <li>
-          <Link to="/gallery">Galería</Link>
-        </li>
-
-        <li>
-          <Link to="/contact">Reservas</Link>
-        </li>
-      </ul>
-
+      <div className="nav-links">
+        <NavLink to="/filosofia">Filosofía</NavLink>
+        <NavLink to="/galeria">Galería</NavLink>
+        <NavLink to="/reservas">Reservas</NavLink>
+      </div>
     </nav>
   );
 }
-
-export default Navbar;

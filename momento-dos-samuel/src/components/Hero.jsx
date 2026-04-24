@@ -1,23 +1,20 @@
 import { useNavigate } from "react-router-dom";
 
-function Hero() {
+export default function Hero() {
   const navigate = useNavigate();
 
   return (
     <section className="hero">
-      <div>
-        <h1>El arte de la paciencia</h1>
+      <h1>El arte de la paciencia</h1>
 
-        <p>
-          Descubre la serenidad a través del cuidado y diseño de árboles Bonsái.
-        </p>
+      <p>
+        Descubre la serenidad a través del cuidado y diseño de árboles Bonsái.
+        Un espacio para reconectar con la naturaleza.
+      </p>
 
-        <button onClick={() => navigate("/contact")}>
-          Reserva un taller
-        </button>
-      </div>
+      <button onClick={() => navigate("/reservas")}>
+        Reserva un taller
+      </button>
     </section>
   );
 }
-
-export default Hero;

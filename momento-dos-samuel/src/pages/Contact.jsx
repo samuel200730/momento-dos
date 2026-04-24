@@ -1,39 +1,20 @@
-import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Form from "../components/Form";
 
-function Contact() {
-  const [form, setForm] = useState({
-    name: "",
-    email: ""
-  });
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(form);
-    localStorage.setItem("form", JSON.stringify(form));
-  };
-
+export default function Contact() {
   return (
     <>
       <Navbar />
 
-      <form onSubmit={handleSubmit} className="form">
-        <input name="name" placeholder="Nombre" onChange={handleChange} />
-        <input name="email" placeholder="Correo" onChange={handleChange} />
-        <button type="submit">Enviar</button>
-      </form>
+      <section className="section">
+        <h1>Reserva un Taller</h1>
+        <p>Déjanos tus datos y te contactamos.</p>
+
+        <Form />
+      </section>
 
       <Footer />
     </>
   );
 }
-
-export default Contact;

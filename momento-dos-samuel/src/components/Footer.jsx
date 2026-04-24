@@ -1,9 +1,7 @@
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
-      <p>© 2026 Zenith Bonsai Studio.</p>
+      <p>© 2026 Zenith Bonsai</p>
     </footer>
   );
 }
-
-export default Footer;
